@@ -956,7 +956,7 @@
           item_name: "${company}") {
             id
           }
-          column_values: ${}
+          column_values: ${JSON.stringify(columnValues)}
         }`).then((result) => console.log(result);
     });
   </script>
