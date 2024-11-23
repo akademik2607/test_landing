@@ -933,7 +933,8 @@
       const fullname = document.getElementById('fullname').value;
       const phone = document.getElementById('phone').value;
       const email = document.getElementById('email').value;
-      if (!company.strip() || !fullname.strip() || !phone.strip() || !email.strip()) {
+            if (!company || !fullname || !phone || !email) {
+
         return;
       }
 
