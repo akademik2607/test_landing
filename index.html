@@ -938,6 +938,11 @@
         return;
       }
 
+      monday.api(`query { users { id, name } }`).then(res => {
+        console.log(res);
+        /* { data: { users: [{id: 12312, name: "Bart Simpson"}, {id: 423423, name: "Homer Simpson"}] } } */
+      });
+
       const columnValues = {
         'text__1': fullname,
         'email__1': {
